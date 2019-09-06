@@ -211,8 +211,9 @@ dp[buff][state] = Math.min(HP, needHP + minHP);
 //最后结果就是HP-dp[5][initstate]。
 大于0就是结果，小于等于0输出dead
 
-![image.png](https://upload-images.jianshu.io/upload_images/468490-74741ed07e8eff32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+dp状态二维数组简图如下：
 
+![image.png](https://upload-images.jianshu.io/upload_images/468490-35c0ca249fe7ea39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```
 package com.company;
