@@ -243,7 +243,7 @@ class Monster {
 public class Main {
     private static final int MAX_STATE = (1 << 20), ROUND = 5;
     static int N, M, HP, AP;
-    static int[][] dp = new int[ROUND + 1][MAX_STATE + 1];
+    static int[][] dp = new int[ROUND + 1][MAX_STATE];
     static Map<String, Monster> monsterMap = new HashMap<>();
 
 
@@ -279,7 +279,7 @@ public class Main {
 
         //状态二维数组，初始化为最大值
         for (int i = 0; i <= ROUND; i++) {
-            for (int j = 0; j <= MAX_STATE; j++) {
+            for (int j = 0; j < MAX_STATE; j++) {
                 dp[i][j] = Integer.MAX_VALUE;
             }
         }
